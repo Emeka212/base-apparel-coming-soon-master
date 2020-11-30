@@ -1,0 +1,153 @@
+/*Feel free to remove these styles or customise in your own stylesheet 👍*/
+.attribution { font-size: 11px; text-align: center;margin-bottom: 10px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+	padding: 0px;
+	margin: 0px;
+	background: hsl(0, 50%, 97%);
+	font-family: Arial;
+	font-family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans);
+    font-weight: 300px;
+}
+header{
+	width: 100%;
+	padding: 50px 0px 50px 0px;
+}
+header img{
+	position: relative;
+	margin-left: 5%;
+}
+.bg_img .mobile{
+	display: none;
+}
+.bg_img .desktop{
+	position: relative;
+	float: right;
+	margin-top: -150px;
+	height: 102vh;
+}
+.h1_txt{
+	position: relative;
+	margin-left: 5%;
+	margin-top: 50px;
+	color: hsl(0, 6%, 24%);
+	font-size: 60px;
+	font-weight: bold;
+	width: 25%;
+	letter-spacing: 20px;
+}
+.h1_txt span{
+	font-weight: normal;
+	color: hsl(0, 36%, 70%);
+	font-weight: 1;
+}
+.sub_txt{
+	width: 30%;
+	position: relative;
+	margin-left: 5%;
+	line-height: 25px;
+	font-size: 15px;
+	margin-top: 50px;
+	color: hsl(0, 36%, 70%);
+}
+.form{
+	position: relative;
+	margin-left: 5%;
+	margin-top: 50px;
+	width: 40%;
+}
+.form input[type="Email"]{
+	height: 50px;
+	width: 70%;
+	border-radius: 50px;
+	border: 1px solid hsl(0, 36%, 70%);
+	background: transparent;
+	padding-left: 25px;
+	color: hsl(0, 36%, 70%);
+	outline: none;
+	margin-bottom: 50px;
+}
+.form button[type="submit"]:focus{
+	background-image: linear-gradient(135deg,hsl(0, 74%, 74%),hsl(0, 80%, 86%));
+}
+.form .error_img{
+	position: absolute;
+	top: 20px;
+	right: 40%;
+	display: none;
+}
+.form span{
+	position: absolute;
+	font-size: 13px;
+	width: 50%;
+	color: hsl(0, 93%, 68%);
+	left: 0px;
+	margin-left: 5%;
+	margin-top: 70px;
+	display: none;
+}
+.form button[type="submit"]{
+	position: relative;
+	height: 55px;
+	width: 100px;
+	top: 3.5px;
+	border: none;
+	border-radius: 50px;
+	background-image: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+	padding-left: 25px;
+	color: #fff;
+	font-weight: bold;
+	outline: none;
+	cursor: pointer;
+	margin-left: -70px;
+	box-shadow: 0px 5px 10px 1px hsl(0, 36%, 70%);
+}
+@media screen and (max-width: 960px){
+	header img{
+		margin-left: 2%;
+	}
+	.h1_txt{
+		margin-left: 2%;
+	}
+	.sub_txt{
+		margin-left: 2%;
+	}
+	.form{
+		margin-left: 2%;
+	}
+	.bg_img .desktop{
+		width: 55%;
+	}
+}
+@media screen and (max-width: 840px){
+	.bg_img .desktop{
+		display: none;
+	}
+	header img{
+		margin-left: 5%;
+	}
+	.bg_img .mobile{
+		display: block;
+		width: 100%;
+	}
+	.h1_txt{
+		margin-left: 0%;
+		margin-top: 100px;
+		width: 100%;
+		text-align: center;
+		font-size: 50px;
+	}
+	.sub_txt{
+		width: 95%;
+		text-align: center;
+		margin-left: 3%;
+	}
+	.form{
+		margin-left: 3%;
+		width: 95%;
+		margin-bottom: 50px;
+	}
+	.form input[type="Email"]{
+		width: 75%;
+	}
+}
